@@ -1,0 +1,36 @@
+{
+  "name": "products-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/products-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/products-e2e/cypress.config.ts",
+        "devServerTarget": "products:storybook",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "products:static-storybook-ui:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/products-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": [
+    "products"
+  ]
+}

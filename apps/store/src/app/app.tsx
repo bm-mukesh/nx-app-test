@@ -6,6 +6,9 @@ import { Footer } from '@myorg/shared-ui';
 import { exampleProducts } from '@myorg/products';
 import { Route, Routes } from 'react-router-dom';
 
+// PAGES
+import Home from '../screen/home/home';
+
 const Layout = styled.div`
   background:#ddd;
   display: flex;
@@ -30,6 +33,7 @@ export function App() {
           {/* <Route path="/" element={<Shop />}></Route> */}
           {/* <Route path="/cart" element={<Cart />}></Route> */}
         </Routes>
+        <Home/>
         <ul>
           {exampleProducts.map((product) => (
             <li key={product.id}>

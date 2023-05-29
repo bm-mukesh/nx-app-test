@@ -13,7 +13,7 @@ export function Banner(props: BannerProps) {
   return (
     <StyledBanner>
       <h1>{props.text}</h1>
-      <small>this is Banner lib from common-ui</small>
+      <small>this is Banner lib from common-ui REPO - nx-app-test</small>
     </StyledBanner>
   );
 }

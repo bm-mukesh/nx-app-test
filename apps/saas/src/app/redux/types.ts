@@ -1,0 +1,41 @@
+export interface institutesType {
+  _id: number;
+  instituteName: string;
+  instituteDomain: string;
+  isActive: boolean;
+  isInhouse: boolean;
+  registeredOn: string;
+  expiresOn: string;
+  logo: string;
+  registeredDetails: {
+    name: string;
+    email: string;
+    phone: string;
+    userName: string;
+  };
+}
+
+export type INote = {
+  id: string;
+  title: string;
+  content: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
+export type IMutateNote = {
+  title: string;
+  content: string;
+};
+export type IGenericResponse = {
+  status: string;
+  message: string;
+};
+export type INoteResponse = {
+  status: string;
+  note: INote;
+};
+export type INotesResponse = {
+  status: string;
+  results: number;
+  notes: INote[];
+};

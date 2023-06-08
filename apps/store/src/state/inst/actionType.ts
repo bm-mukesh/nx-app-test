@@ -1,0 +1,9 @@
+//INSTITUTE
+export enum InstituteActionType {
+    GET_INST = "GET_INST",
+    INST_EROR = "INST_EROR",
+    ADD_INST = "ADD_INST",
+    EDIT_INST = "EDIT_INST",
+    REMOVE_INST = "REMOVE_INST",
+    DISABLE_INST = "DISABLE_INST"
+}

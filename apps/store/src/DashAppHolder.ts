@@ -32,24 +32,7 @@ const DashAppHolder = styled.div`
       display: none;
     }
   }
-
-  .ant-row > div {
-    padding: 0;
-  }
-
-  .isoLeftRightComponent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .isoCenterComponent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+ 
 `;
 
 export default DashAppHolder;

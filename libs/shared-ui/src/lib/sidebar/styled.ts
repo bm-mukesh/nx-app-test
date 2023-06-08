@@ -23,7 +23,7 @@ export const SidebarUl = styled.ul`
     list-style: none;
     a {
       display: block;
-      padding: 10px 8px;
+      padding: 10px 14px;
       background: white;
       margin-bottom: 4px;
     }

@@ -13,7 +13,7 @@ export function App() {
   return (
     <StyledApp>
       <Banner text="Welcome to our admin app." />
-      <NxWelcome title="admin" />
+      {/* <NxWelcome title="admin" /> */}
 
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}

@@ -1,0 +1,89 @@
+{
+    "username": "dev.mukeshcgs@gmail.com",
+    "pool": {
+        "userPoolId": "ap-south-1_y8cMcZLSg",
+        "clientId": "tmk9pbmnbk2u8g904bc4hg005",
+        "client": {
+            "endpoint": "https://cognito-idp.ap-south-1.amazonaws.com/",
+            "fetchOptions": {}
+        },
+        "advancedSecurityDataCollectionFlag": true,
+        "storage": {
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.LastAuthUser": "dev.mukeshcgs@gmail.com",
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.userData": "{\"UserAttributes\":[{\"Name\":\"sub\",\"Value\":\"6f16cadd-e4c4-4bd9-a880-c4c1e782b953\"},{\"Name\":\"email_verified\",\"Value\":\"true\"},{\"Name\":\"phone_number_verified\",\"Value\":\"false\"},{\"Name\":\"phone_number\",\"Value\":\"+919821672735\"},{\"Name\":\"email\",\"Value\":\"dev.mukeshcgs@gmail.com\"}],\"Username\":\"dev.mukeshcgs@gmail.com\"}",
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.idToken": "eyJraWQiOiJJVnZBYWFGdFBMNmtBVFwvVmhkSGk3UHcySnNsMnlPSEVZMGNEeTNDMjVJaz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV95OGNNY1pMU2ciLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZGV2Lm11a2VzaGNnc0BnbWFpbC5jb20iLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiYXVkIjoidG1rOXBibW5iazJ1OGc5MDRiYzRoZzAwNSIsImV2ZW50X2lkIjoiMmVjM2QzNTAtNzg0Yy00MmVmLTgxZGEtZGJjOGVjZjY2MDcyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODYyMjI4MTgsInBob25lX251bWJlciI6Iis5MTk4MjE2NzI3MzUiLCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiZjcyMDYxNWItYmM2NS00ZTgyLWI1YTYtNzkwYjAxYTA5OTM0IiwiZW1haWwiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.oEo5NWomfceZeM5vwJRhuzIhwoSLltb8HmhcUUy_yUvLwYTKwwv4QZ_Z_GrBw3FYukkt7P8I3CuMWW1LL2I9JW108PIFpQbLagmxsurZECg9KTVyaRRAOVvSrkmKoXK9cRFGq1bJrtPPHTyVQKZS5yrDJ4e3ppleNbHW9TqRY4Dj0r4VGGcpVaSSagPbyFnZYyyLay75OgMeg9UVPbeImArIBntXx7YI9Ni35R0G2SogYSQsKsPyjv2ncWbKQWxHscvxZIhm3cL06WRKmN9XXDlTgrZr2rM-eDh4FAITspkFRufQTGQJg3F1xNeUEP8amKpUYCOY0IhySOxoKP_FVw",
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DlNApfq5P6rZi87Tf1yOAFy-24jqOhgn_K_hg4oKP-DW3LcaMaU28r0lZ-kAVIY7TxmzDlgRSUiawcbx6UHXiXdoEDCzJ0fXd4jTRymlTdUil_QEKE10Il1hun6FGhdjBvGMxRF5ShX4g6x3gDAIRz4HhKUpSGFC5DIbhWDpQu9J3oSj7-zI5JvUzGhVWQ4Pr58bkjb237B1b_83h7s3HxBOXx9-Zhfak5RsHmVsy7V2isNAtSOZJYiBdyAS7B6FFGtSlJhvrrICgt-FisUwqz_QrUBCQ7ceKngIiXQn4_yOwwrn1j37t8pZQig3Om4mAh-zk7EveXnxS26IKFNtTA.MrwbLSKsHuvwiDku.qTsa4jYH1wubx34hCUiPABsFNghb9W-bUqp7ktULpRiKl4NeUVR6ZFTL-1ogFjmR0DJtB5kte5mIojTfAcyFL_-vOigilYLh3CRitnTJ8mf6JY5RmgXZ8Npe2G_C2hz_gl9ksqcZEJSmkAwugT2CWAg10fhUClida0CbNau21k44zMRQlqT1S0LMM6-dUEs3TtKVnUTVH1pUNqgSmvhxZy4sEKXSz90Ryr5dS5SSAPCV_4A-zC7EijfAnH7uqyWu5LYQS-EwojtKvu_8QzbsLA9uMLjqnDDVG1nBP6Z-VvuLrpRwshduA8B5QKociDQPAA9VueFa-HqRaloqub2gLhE8XCLQ_KChK1v_wUrgZQiC7qBUxSdKBeCsAyV-sQ5l9lgy0ctNmHYPLQGTNltn_aDpXbszKfJaEX5oA_bBj43EgP_IwkkKHpSychfUMHiIJ4UeUtMnDVvC5wynyAKdG9nyJ0nVDJ9pNQuFZriNl2_3qsLPuXFO6q1KFfuxpYAmLlcFnDUkzYX3eCMgAwdc5eYfd3LemLlV4NTbpJZDXKIqPmrmKfK8VahCJOYI8BWl9_RR4UvKsUW4-Q4tSypWZhRH0PGje5pbjL5Zxyir37J9CmKT55W_uq0asruO_V7jdpqjcufWP3w7B2Z_VFE78kE4atG6BwNTnFSoRjdo081S9Pz3mfXPjdJBkCZis-VONBEa7qvm709OEHgXKMVOTZYfBbykmzZ6HJgpnEU-pzp-yvunltfVOhJBsgadsvzKRY7x1JRt2bpdYy-2h4oHYrJBucA0BwVOB_gkHYeCLFMfwwbxDnN_nw-klk1SFAyfM2d4OVAg_crR6VOsM1VePHYF54ik6U07FY5s7vUW9QnCnfTAY8cC2P--Xk1HRgtW2f9NVgtJf8FEjX2yrlKRz6HQPe80loZWa9nxZ9DY1iQvMp0PeIY8I22vgVSdMnfueALGjPObTorEFX2IRo_ufDrQZPchT43VIbniB0QqDYOshjKY_ji4mU60zy0OtgJBWdiyiN-lil8brnJwCuT-lHhiOoEcVnnGCyqzXoiszSS-BBlDmFESJqc576WNPUy_g-uShZnhDC_kM2S2CObhP_LhBThE1xYL7VHqcFQGaP8NUaHx6ldNftX3QUrr84791H4hd7fHsBJVN8Y5yU0-OFTnHwQQVHQ536tbwiulAOF_f6xwNf3ueoxIW3VCNY68lVkvtchQ7G6OZ3e5geM33XqSoCb1sVX3cQCoFppv9-Ro9vAKlg-yyEB-xS1AyUwhg948vR_uc9nJsbV80o_X498IbNZuoOccwj2b.fEqBTE9bexK6C2nQS2i5zw",
+            "amplify-signin-with-hostedUI": "false",
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.accessToken": "eyJraWQiOiIyUDNNaTMwYkRxczdDU2ZURlFLdUFFTjVVc1d0NndsZUZMQ3VEaW9cLzRKTT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX3k4Y01jWkxTZyIsImNsaWVudF9pZCI6InRtazlwYm1uYmsydThnOTA0YmM0aGcwMDUiLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiZXZlbnRfaWQiOiIyZWMzZDM1MC03ODRjLTQyZWYtODFkYS1kYmM4ZWNmNjYwNzIiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjg2MjIyODE4LCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiNTBhZjBiMDQtZDM4YS00MTU4LTkwZDAtY2I2ZGYwYTEyNDFmIiwidXNlcm5hbWUiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.F54CEQ5g7a-tLH6fWEcU6ljHnPG1YYwSK6VonM1zYNiBmiGs2TWb5BjTw1ipSx1rCgBqsOe8qlcakJD7LDDnI6lhepRvueNKv3nIK5tNSCwlZBQh1pgGMulQWfhXLX8g2QwaBklcLQgyAunsylPrhWgbgT9dqZosIxRTXShvl6dXFavSmzcc9RR_d90FdeGGC0sBqSu7kVnytdnbkavOvGfoUR_yvA9pY-hBnptYink6PrT6ge57VX76m9BEcRMl1EEjG2P6LbpLlHdxbyqdZkY4m44J7ZjjDQ0Yl44L56_5ALKt0GtbmPhrJzyaiWTny098O_nBuiScFnhBOWZTzg",
+            "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.clockDrift": "0"
+        }
+    },
+    "Session": null,
+    "client": {
+        "endpoint": "https://cognito-idp.ap-south-1.amazonaws.com/",
+        "fetchOptions": {}
+    },
+    "signInUserSession": {
+        "idToken": {
+            "jwtToken": "eyJraWQiOiJJVnZBYWFGdFBMNmtBVFwvVmhkSGk3UHcySnNsMnlPSEVZMGNEeTNDMjVJaz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV95OGNNY1pMU2ciLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZGV2Lm11a2VzaGNnc0BnbWFpbC5jb20iLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiYXVkIjoidG1rOXBibW5iazJ1OGc5MDRiYzRoZzAwNSIsImV2ZW50X2lkIjoiMmVjM2QzNTAtNzg0Yy00MmVmLTgxZGEtZGJjOGVjZjY2MDcyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODYyMjI4MTgsInBob25lX251bWJlciI6Iis5MTk4MjE2NzI3MzUiLCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiZjcyMDYxNWItYmM2NS00ZTgyLWI1YTYtNzkwYjAxYTA5OTM0IiwiZW1haWwiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.oEo5NWomfceZeM5vwJRhuzIhwoSLltb8HmhcUUy_yUvLwYTKwwv4QZ_Z_GrBw3FYukkt7P8I3CuMWW1LL2I9JW108PIFpQbLagmxsurZECg9KTVyaRRAOVvSrkmKoXK9cRFGq1bJrtPPHTyVQKZS5yrDJ4e3ppleNbHW9TqRY4Dj0r4VGGcpVaSSagPbyFnZYyyLay75OgMeg9UVPbeImArIBntXx7YI9Ni35R0G2SogYSQsKsPyjv2ncWbKQWxHscvxZIhm3cL06WRKmN9XXDlTgrZr2rM-eDh4FAITspkFRufQTGQJg3F1xNeUEP8amKpUYCOY0IhySOxoKP_FVw",
+            "payload": {
+                "sub": "6f16cadd-e4c4-4bd9-a880-c4c1e782b953",
+                "email_verified": true,
+                "iss": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_y8cMcZLSg",
+                "phone_number_verified": false,
+                "cognito:username": "dev.mukeshcgs@gmail.com",
+                "origin_jti": "b84ba480-bbed-4708-b815-efb272ffbeef",
+                "aud": "tmk9pbmnbk2u8g904bc4hg005",
+                "event_id": "2ec3d350-784c-42ef-81da-dbc8ecf66072",
+                "token_use": "id",
+                "auth_time": 1686222818,
+                "phone_number": "+919821672735",
+                "exp": 1686226418,
+                "iat": 1686222818,
+                "jti": "f720615b-bc65-4e82-b5a6-790b01a09934",
+                "email": "dev.mukeshcgs@gmail.com"
+            }
+        },
+        "refreshToken": {
+            "token": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DlNApfq5P6rZi87Tf1yOAFy-24jqOhgn_K_hg4oKP-DW3LcaMaU28r0lZ-kAVIY7TxmzDlgRSUiawcbx6UHXiXdoEDCzJ0fXd4jTRymlTdUil_QEKE10Il1hun6FGhdjBvGMxRF5ShX4g6x3gDAIRz4HhKUpSGFC5DIbhWDpQu9J3oSj7-zI5JvUzGhVWQ4Pr58bkjb237B1b_83h7s3HxBOXx9-Zhfak5RsHmVsy7V2isNAtSOZJYiBdyAS7B6FFGtSlJhvrrICgt-FisUwqz_QrUBCQ7ceKngIiXQn4_yOwwrn1j37t8pZQig3Om4mAh-zk7EveXnxS26IKFNtTA.MrwbLSKsHuvwiDku.qTsa4jYH1wubx34hCUiPABsFNghb9W-bUqp7ktULpRiKl4NeUVR6ZFTL-1ogFjmR0DJtB5kte5mIojTfAcyFL_-vOigilYLh3CRitnTJ8mf6JY5RmgXZ8Npe2G_C2hz_gl9ksqcZEJSmkAwugT2CWAg10fhUClida0CbNau21k44zMRQlqT1S0LMM6-dUEs3TtKVnUTVH1pUNqgSmvhxZy4sEKXSz90Ryr5dS5SSAPCV_4A-zC7EijfAnH7uqyWu5LYQS-EwojtKvu_8QzbsLA9uMLjqnDDVG1nBP6Z-VvuLrpRwshduA8B5QKociDQPAA9VueFa-HqRaloqub2gLhE8XCLQ_KChK1v_wUrgZQiC7qBUxSdKBeCsAyV-sQ5l9lgy0ctNmHYPLQGTNltn_aDpXbszKfJaEX5oA_bBj43EgP_IwkkKHpSychfUMHiIJ4UeUtMnDVvC5wynyAKdG9nyJ0nVDJ9pNQuFZriNl2_3qsLPuXFO6q1KFfuxpYAmLlcFnDUkzYX3eCMgAwdc5eYfd3LemLlV4NTbpJZDXKIqPmrmKfK8VahCJOYI8BWl9_RR4UvKsUW4-Q4tSypWZhRH0PGje5pbjL5Zxyir37J9CmKT55W_uq0asruO_V7jdpqjcufWP3w7B2Z_VFE78kE4atG6BwNTnFSoRjdo081S9Pz3mfXPjdJBkCZis-VONBEa7qvm709OEHgXKMVOTZYfBbykmzZ6HJgpnEU-pzp-yvunltfVOhJBsgadsvzKRY7x1JRt2bpdYy-2h4oHYrJBucA0BwVOB_gkHYeCLFMfwwbxDnN_nw-klk1SFAyfM2d4OVAg_crR6VOsM1VePHYF54ik6U07FY5s7vUW9QnCnfTAY8cC2P--Xk1HRgtW2f9NVgtJf8FEjX2yrlKRz6HQPe80loZWa9nxZ9DY1iQvMp0PeIY8I22vgVSdMnfueALGjPObTorEFX2IRo_ufDrQZPchT43VIbniB0QqDYOshjKY_ji4mU60zy0OtgJBWdiyiN-lil8brnJwCuT-lHhiOoEcVnnGCyqzXoiszSS-BBlDmFESJqc576WNPUy_g-uShZnhDC_kM2S2CObhP_LhBThE1xYL7VHqcFQGaP8NUaHx6ldNftX3QUrr84791H4hd7fHsBJVN8Y5yU0-OFTnHwQQVHQ536tbwiulAOF_f6xwNf3ueoxIW3VCNY68lVkvtchQ7G6OZ3e5geM33XqSoCb1sVX3cQCoFppv9-Ro9vAKlg-yyEB-xS1AyUwhg948vR_uc9nJsbV80o_X498IbNZuoOccwj2b.fEqBTE9bexK6C2nQS2i5zw"
+        },
+        "accessToken": {
+            "jwtToken": "eyJraWQiOiIyUDNNaTMwYkRxczdDU2ZURlFLdUFFTjVVc1d0NndsZUZMQ3VEaW9cLzRKTT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX3k4Y01jWkxTZyIsImNsaWVudF9pZCI6InRtazlwYm1uYmsydThnOTA0YmM0aGcwMDUiLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiZXZlbnRfaWQiOiIyZWMzZDM1MC03ODRjLTQyZWYtODFkYS1kYmM4ZWNmNjYwNzIiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjg2MjIyODE4LCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiNTBhZjBiMDQtZDM4YS00MTU4LTkwZDAtY2I2ZGYwYTEyNDFmIiwidXNlcm5hbWUiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.F54CEQ5g7a-tLH6fWEcU6ljHnPG1YYwSK6VonM1zYNiBmiGs2TWb5BjTw1ipSx1rCgBqsOe8qlcakJD7LDDnI6lhepRvueNKv3nIK5tNSCwlZBQh1pgGMulQWfhXLX8g2QwaBklcLQgyAunsylPrhWgbgT9dqZosIxRTXShvl6dXFavSmzcc9RR_d90FdeGGC0sBqSu7kVnytdnbkavOvGfoUR_yvA9pY-hBnptYink6PrT6ge57VX76m9BEcRMl1EEjG2P6LbpLlHdxbyqdZkY4m44J7ZjjDQ0Yl44L56_5ALKt0GtbmPhrJzyaiWTny098O_nBuiScFnhBOWZTzg",
+            "payload": {
+                "sub": "6f16cadd-e4c4-4bd9-a880-c4c1e782b953",
+                "iss": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_y8cMcZLSg",
+                "client_id": "tmk9pbmnbk2u8g904bc4hg005",
+                "origin_jti": "b84ba480-bbed-4708-b815-efb272ffbeef",
+                "event_id": "2ec3d350-784c-42ef-81da-dbc8ecf66072",
+                "token_use": "access",
+                "scope": "aws.cognito.signin.user.admin",
+                "auth_time": 1686222818,
+                "exp": 1686226418,
+                "iat": 1686222818,
+                "jti": "50af0b04-d38a-4158-90d0-cb6df0a1241f",
+                "username": "dev.mukeshcgs@gmail.com"
+            }
+        },
+        "clockDrift": 0
+    },
+    "authenticationFlowType": "USER_SRP_AUTH",
+    "storage": {
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.LastAuthUser": "dev.mukeshcgs@gmail.com",
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.userData": "{\"UserAttributes\":[{\"Name\":\"sub\",\"Value\":\"6f16cadd-e4c4-4bd9-a880-c4c1e782b953\"},{\"Name\":\"email_verified\",\"Value\":\"true\"},{\"Name\":\"phone_number_verified\",\"Value\":\"false\"},{\"Name\":\"phone_number\",\"Value\":\"+919821672735\"},{\"Name\":\"email\",\"Value\":\"dev.mukeshcgs@gmail.com\"}],\"Username\":\"dev.mukeshcgs@gmail.com\"}",
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.idToken": "eyJraWQiOiJJVnZBYWFGdFBMNmtBVFwvVmhkSGk3UHcySnNsMnlPSEVZMGNEeTNDMjVJaz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV95OGNNY1pMU2ciLCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJjb2duaXRvOnVzZXJuYW1lIjoiZGV2Lm11a2VzaGNnc0BnbWFpbC5jb20iLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiYXVkIjoidG1rOXBibW5iazJ1OGc5MDRiYzRoZzAwNSIsImV2ZW50X2lkIjoiMmVjM2QzNTAtNzg0Yy00MmVmLTgxZGEtZGJjOGVjZjY2MDcyIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODYyMjI4MTgsInBob25lX251bWJlciI6Iis5MTk4MjE2NzI3MzUiLCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiZjcyMDYxNWItYmM2NS00ZTgyLWI1YTYtNzkwYjAxYTA5OTM0IiwiZW1haWwiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.oEo5NWomfceZeM5vwJRhuzIhwoSLltb8HmhcUUy_yUvLwYTKwwv4QZ_Z_GrBw3FYukkt7P8I3CuMWW1LL2I9JW108PIFpQbLagmxsurZECg9KTVyaRRAOVvSrkmKoXK9cRFGq1bJrtPPHTyVQKZS5yrDJ4e3ppleNbHW9TqRY4Dj0r4VGGcpVaSSagPbyFnZYyyLay75OgMeg9UVPbeImArIBntXx7YI9Ni35R0G2SogYSQsKsPyjv2ncWbKQWxHscvxZIhm3cL06WRKmN9XXDlTgrZr2rM-eDh4FAITspkFRufQTGQJg3F1xNeUEP8amKpUYCOY0IhySOxoKP_FVw",
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.refreshToken": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.DlNApfq5P6rZi87Tf1yOAFy-24jqOhgn_K_hg4oKP-DW3LcaMaU28r0lZ-kAVIY7TxmzDlgRSUiawcbx6UHXiXdoEDCzJ0fXd4jTRymlTdUil_QEKE10Il1hun6FGhdjBvGMxRF5ShX4g6x3gDAIRz4HhKUpSGFC5DIbhWDpQu9J3oSj7-zI5JvUzGhVWQ4Pr58bkjb237B1b_83h7s3HxBOXx9-Zhfak5RsHmVsy7V2isNAtSOZJYiBdyAS7B6FFGtSlJhvrrICgt-FisUwqz_QrUBCQ7ceKngIiXQn4_yOwwrn1j37t8pZQig3Om4mAh-zk7EveXnxS26IKFNtTA.MrwbLSKsHuvwiDku.qTsa4jYH1wubx34hCUiPABsFNghb9W-bUqp7ktULpRiKl4NeUVR6ZFTL-1ogFjmR0DJtB5kte5mIojTfAcyFL_-vOigilYLh3CRitnTJ8mf6JY5RmgXZ8Npe2G_C2hz_gl9ksqcZEJSmkAwugT2CWAg10fhUClida0CbNau21k44zMRQlqT1S0LMM6-dUEs3TtKVnUTVH1pUNqgSmvhxZy4sEKXSz90Ryr5dS5SSAPCV_4A-zC7EijfAnH7uqyWu5LYQS-EwojtKvu_8QzbsLA9uMLjqnDDVG1nBP6Z-VvuLrpRwshduA8B5QKociDQPAA9VueFa-HqRaloqub2gLhE8XCLQ_KChK1v_wUrgZQiC7qBUxSdKBeCsAyV-sQ5l9lgy0ctNmHYPLQGTNltn_aDpXbszKfJaEX5oA_bBj43EgP_IwkkKHpSychfUMHiIJ4UeUtMnDVvC5wynyAKdG9nyJ0nVDJ9pNQuFZriNl2_3qsLPuXFO6q1KFfuxpYAmLlcFnDUkzYX3eCMgAwdc5eYfd3LemLlV4NTbpJZDXKIqPmrmKfK8VahCJOYI8BWl9_RR4UvKsUW4-Q4tSypWZhRH0PGje5pbjL5Zxyir37J9CmKT55W_uq0asruO_V7jdpqjcufWP3w7B2Z_VFE78kE4atG6BwNTnFSoRjdo081S9Pz3mfXPjdJBkCZis-VONBEa7qvm709OEHgXKMVOTZYfBbykmzZ6HJgpnEU-pzp-yvunltfVOhJBsgadsvzKRY7x1JRt2bpdYy-2h4oHYrJBucA0BwVOB_gkHYeCLFMfwwbxDnN_nw-klk1SFAyfM2d4OVAg_crR6VOsM1VePHYF54ik6U07FY5s7vUW9QnCnfTAY8cC2P--Xk1HRgtW2f9NVgtJf8FEjX2yrlKRz6HQPe80loZWa9nxZ9DY1iQvMp0PeIY8I22vgVSdMnfueALGjPObTorEFX2IRo_ufDrQZPchT43VIbniB0QqDYOshjKY_ji4mU60zy0OtgJBWdiyiN-lil8brnJwCuT-lHhiOoEcVnnGCyqzXoiszSS-BBlDmFESJqc576WNPUy_g-uShZnhDC_kM2S2CObhP_LhBThE1xYL7VHqcFQGaP8NUaHx6ldNftX3QUrr84791H4hd7fHsBJVN8Y5yU0-OFTnHwQQVHQ536tbwiulAOF_f6xwNf3ueoxIW3VCNY68lVkvtchQ7G6OZ3e5geM33XqSoCb1sVX3cQCoFppv9-Ro9vAKlg-yyEB-xS1AyUwhg948vR_uc9nJsbV80o_X498IbNZuoOccwj2b.fEqBTE9bexK6C2nQS2i5zw",
+        "amplify-signin-with-hostedUI": "false",
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.accessToken": "eyJraWQiOiIyUDNNaTMwYkRxczdDU2ZURlFLdUFFTjVVc1d0NndsZUZMQ3VEaW9cLzRKTT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2ZjE2Y2FkZC1lNGM0LTRiZDktYTg4MC1jNGMxZTc4MmI5NTMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX3k4Y01jWkxTZyIsImNsaWVudF9pZCI6InRtazlwYm1uYmsydThnOTA0YmM0aGcwMDUiLCJvcmlnaW5fanRpIjoiYjg0YmE0ODAtYmJlZC00NzA4LWI4MTUtZWZiMjcyZmZiZWVmIiwiZXZlbnRfaWQiOiIyZWMzZDM1MC03ODRjLTQyZWYtODFkYS1kYmM4ZWNmNjYwNzIiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjg2MjIyODE4LCJleHAiOjE2ODYyMjY0MTgsImlhdCI6MTY4NjIyMjgxOCwianRpIjoiNTBhZjBiMDQtZDM4YS00MTU4LTkwZDAtY2I2ZGYwYTEyNDFmIiwidXNlcm5hbWUiOiJkZXYubXVrZXNoY2dzQGdtYWlsLmNvbSJ9.F54CEQ5g7a-tLH6fWEcU6ljHnPG1YYwSK6VonM1zYNiBmiGs2TWb5BjTw1ipSx1rCgBqsOe8qlcakJD7LDDnI6lhepRvueNKv3nIK5tNSCwlZBQh1pgGMulQWfhXLX8g2QwaBklcLQgyAunsylPrhWgbgT9dqZosIxRTXShvl6dXFavSmzcc9RR_d90FdeGGC0sBqSu7kVnytdnbkavOvGfoUR_yvA9pY-hBnptYink6PrT6ge57VX76m9BEcRMl1EEjG2P6LbpLlHdxbyqdZkY4m44J7ZjjDQ0Yl44L56_5ALKt0GtbmPhrJzyaiWTny098O_nBuiScFnhBOWZTzg",
+        "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.clockDrift": "0"
+    },
+    "keyPrefix": "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005",
+    "userDataKey": "CognitoIdentityServiceProvider.tmk9pbmnbk2u8g904bc4hg005.dev.mukeshcgs@gmail.com.userData",
+    "attributes": {
+        "sub": "6f16cadd-e4c4-4bd9-a880-c4c1e782b953",
+        "email_verified": true,
+        "phone_number_verified": false,
+        "phone_number": "+919821672735",
+        "email": "dev.mukeshcgs@gmail.com"
+    },
+    "preferredMFA": "NOMFA"
+}

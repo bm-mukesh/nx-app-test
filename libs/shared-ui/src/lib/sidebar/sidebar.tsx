@@ -27,10 +27,3 @@ export function Sidebar(props: SidebarProps) {
 }
 
 export default Sidebar;
-
-
-
-
-
-
-

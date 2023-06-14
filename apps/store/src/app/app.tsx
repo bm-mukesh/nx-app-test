@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 import react, { useState, useMemo, useEffect } from 'react'
-import { Banner } from '@myorg/common-ui';
-import { Header, Sidebar, GlobalStyle } from '@myorg/shared-ui';
-import { Footer } from '@myorg/shared-ui';
-import { exampleProducts } from '@myorg/products';
 import { useSelector, useDispatch } from "react-redux";
 import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 
@@ -12,15 +8,14 @@ import { bindActionCreators } from "redux";
 import * as actionCreators from "../state/action-creators/index";
 import * as InstituteActionCreators from "../state/inst/instituteAc";
 import { RootState } from "../state";
+import * as AuthActionCreators from "../state/auth/authAc";
 
 // PAGES
 import Home from '../screen/home/home';
 import SignIn from '../screen/home/SignIn';
 import SignUp from '../screen/home/SignUp';
 
-//DATA TABLE
-import DataTable, { TableColumn } from 'react-data-table-component';
-import FilterComponent from './FilterComponent';
+ 
 //AWS COGNITO
 import { Amplify } from 'aws-amplify';
 import awsExports from '../config/aws-exports';
@@ -30,14 +25,8 @@ import FlowbiteHeader from '../component/FlowbiteHeader';
 // import ProtectedRoute, { ProtectedRouteProps } from '../component/PrivateRoute';
 import ProtectedRoute from '../component/PrivateRoute';
 import Dashboard from '../screen/home/dashboard';
-// import PrivateRoute from '../component/PrivateRoute';
-interface DataRow {
-  _id: number;
-  isActive: boolean;
-  isInhouse: boolean;
-  instituteName: string;
-  instituteDomain: string;
-}
+import FlowbiteFooter from '../component/FlowbiteFooter';
+// import PrivateRoute from '../component/PrivateRoute'; 
 
 const Layout = styled.div`
 display: flex;
@@ -60,22 +49,17 @@ display: flex;
     padding: 1rem;
   }
  `;
- 
-export function App() {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const { depositeMoney, withdrawMoney, bankrupt, enLangChange, } = bindActionCreators(actionCreators, dispatch);
-  const { getInstitute, addInstitute } = bindActionCreators(InstituteActionCreators, dispatch);
 
-  const [showSignIn, setShowSignIn] = useState(true);
-  const [showSignUp, setShowSignUp] = useState(false);
+export function App() {
+  const dispatch = useDispatch();
+   // LOGIN LOGOUT
+  const { logoutRequest } = bindActionCreators(AuthActionCreators, dispatch);
 
   //GET STATE FROM STORE
-  const state = useSelector((state: RootState) => state.bank);
   const instState = useSelector((state: RootState) => state.institute.data);
-  console.log(instState);
+  console.log("Page==============App.js", instState);
+
   //EDIT ROW POPUP
-  const [editRowPopUp, setEditRowPopUp] = useState(false);
   const [viewInstitute, setViewInstitute] = useState({});
 
   useEffect(() => {
@@ -86,26 +70,27 @@ export function App() {
         userPoolWebClientId: awsExports.USER_POOL_APP_CLIENT_ID,
       },
     });
-  },[]);
+  }, []);
+ 
+ return (<>
+    <FlowbiteHeader onClick={logoutRequest} />
 
-
-  return (<>
-    <GlobalStyle />
-    <FlowbiteHeader />
     {/* <Header text='STORE' /> */}
+
     <Routes>
       {/* <Route path='/' element={<Home />} /> */}
       {/* <Route path='dashboard' element={ <ProtectedRoute {...defaultProtectedRouteProps} outlet={<Dashboard />} />} /> */}
       <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            }
-          />
+        path="/"
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        }
+      />
 
       <Route path="/login" element={< SignIn />} />
+      <Route path="/signup" element={< SignUp />} />
       <Route path="*" element={<Navigate to="/" />} />
 
       {/* <PrivateRoute isAuth={false} redirectPath="/login" path="/t1">
@@ -116,7 +101,9 @@ export function App() {
       <Route path="/institutes" element={<Institutes />} />
       <Route path="/institute/:id" element={<InstituteDetails institute={viewInstitute} />} />
     </Routes>
-    <Footer text='STORE' />
+    <FlowbiteFooter />
+
+    {/* <Footer text='STORE' /> */}
 
     {/* <Layout className='main'>
       <Sidebar text='STORE' />

@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+
 import { InstituteActionType, } from "../inst/actionType"
 import { Dispatch } from "redux"
 import { InstituteAction } from '../inst/instituteActions'
@@ -12,7 +14,6 @@ const BASE_URL = 'https://b925d043-66e7-442f-87ec-4863e6832977.mock.pstmn.io/'
 //       });
 //     };
 //   }
-
 export const getInstitute = (RES_DATA: any)  => {
     return async  (dispatch: Dispatch<InstituteAction>)=>{
         try{
@@ -31,6 +32,7 @@ export const getInstitute = (RES_DATA: any)  => {
             })
         }
     }
+
 }
 
 // export const getInstitute = (RES_DATA: any) => {

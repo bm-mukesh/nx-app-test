@@ -1,0 +1,172 @@
+{
+  "name": "mf-host",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mf-host/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/mf-host/browser",
+        "index": "apps/mf-host/src/index.html",
+        "baseHref": "/",
+        "main": "apps/mf-host/src/main.ts",
+        "tsConfig": "apps/mf-host/tsconfig.app.json",
+        "assets": ["apps/mf-host/src/favicon.ico", "apps/mf-host/src/assets"],
+        "styles": [],
+        "scripts": [],
+        "isolatedConfig": true,
+        "webpackConfig": "apps/mf-host/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/mf-host/src/environments/environment.ts",
+              "with": "apps/mf-host/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "webpackConfig": "apps/mf-host/webpack.config.prod.js"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/react:module-federation-ssr-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "browserTarget": "mf-host:build:development",
+        "serverTarget": "mf-host:serve-server:development",
+        "port": 4200,
+        "browserTargetOptions": {
+          "watch": true
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "browserTarget": "mf-host:build:production",
+          "serverTarget": "mf-host:serve-server:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mf-host/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mf-host:build",
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mf-host:build:development"
+        },
+        "production": {
+          "buildTarget": "mf-host:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/mf-host/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "server": {
+      "dependsOn": ["build"],
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "main": "apps/mf-host/server.ts",
+        "outputPath": "dist/apps/mf-host/server",
+        "tsConfig": "apps/mf-host/tsconfig.server.json",
+        "compiler": "babel",
+        "externalDependencies": "all",
+        "outputHashing": "none",
+        "isolatedConfig": true,
+        "webpackConfig": "apps/mf-host/webpack.server.config.js"
+      },
+      "configurations": {
+        "development": {
+          "optimization": false,
+          "sourceMap": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/mf-host/src/environments/environment.ts",
+              "with": "apps/mf-host/src/environments/environment.prod.ts"
+            }
+          ],
+          "sourceMap": false
+        }
+      }
+    },
+    "serve-browser": {
+      "executor": "@nx/react:module-federation-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mf-host:build",
+        "hmr": true,
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mf-host:build:development"
+        },
+        "production": {
+          "buildTarget": "mf-host:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "serve-server": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mf-host:server:development",
+        "buildTargetOptions": {
+          "watch": true
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "buildTarget": "mf-host:server:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

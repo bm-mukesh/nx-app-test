@@ -14,7 +14,7 @@ export const loginRequest = (data: any) => {
                     type: AuthActionType.LOGIN_SUCCESS,
                     payload: { idToken: user.signInUserSession.idToken.jwtToken }
                 })
-            })
+            }) 
             .catch((err: any) => {
                 console.log("==========>error", err);
                 return dispatch({
@@ -29,7 +29,18 @@ export const loginRequest = (data: any) => {
         }
     }
 }
-
+// LOG OUT REQUEST
+export const logoutRequest = () => {
+    console.log(">>>>>>>>>> logout action",);
+    return async (dispatch: Dispatch<AuthAction>) => {
+        Auth.signOut().then(() =>{
+            return dispatch({
+                type: AuthActionType.LOGOUT,
+                payload: { idToken: null }
+            })
+        });
+    }
+}
 // event.preventDefault();
 // Auth.signIn({
 //     username: email,

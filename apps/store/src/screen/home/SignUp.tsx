@@ -22,7 +22,10 @@ export function SignUp() {
     const [newPassword, setNewPassword] = useState("");
     const [waitingForCode, setWaitingForCode] = useState(false);
     const [code, setCode] = useState("");
-
+    const [forgotPassword, setForgotPassword] = useState(false);
+    const [signUpSec, setSignUpSec] = useState(false);
+    const [codeNewPass, setCodeNewPass] = useState(false);
+ 
     // const signUp = (e:any) => {
     //     e.preventDefault();
     //     Auth.signUp({ username: email, password, attributes: { email } })
@@ -110,33 +113,38 @@ export function SignUp() {
 
     return (
         <div className="form">
-            <h3>Sign Up</h3>
-            <form className="flex max-w-md flex-col gap-4">
-                <input
-                    id="sign-up-email"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="email"
-                />
-                <button type="button" onClick={forgotPasswordFun}>Forgot password</button>
-            </form>
-            <form className="flex max-w-md flex-col gap-4">
-                <input
-                    type="text"
-                    value={code}
-                    onChange={(e) => setCode(e.target.value)}
-                    placeholder="code"
-                />
-                <input
-                    type="password"
-                    value={newPassword}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    placeholder="new password"
-                /> 
-                <Button type="submit" onClick={forgotPasswordSubmitFun}>Reset password</Button>
-                <Button type="button" onClick={resendCode}>Resend code</Button> 
-            </form>
+            <h3>Sign Up page</h3>
+                 {/* <form className="flex max-w-md flex-col gap-4">
+                    <input
+                        id="sign-up-email"
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="email"
+                    />
+                    <button type="button" onClick={forgotPasswordFun}>Forgot password</button>
+                </form>
+                 <form className="flex max-w-md flex-col gap-4">
+                    <input
+                        type="text"
+                        value={code}
+                        onChange={(e) => setCode(e.target.value)}
+                        placeholder="code"
+                    />
+                    <input
+                        type="password"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                        placeholder="new password"
+                    />
+                    <Button type="submit" onClick={forgotPasswordSubmitFun}>Reset password</Button>
+                    <Button type="button" onClick={resendCode}>Resend code</Button>
+                </form>
+   */}
+
+            <br />
+            <hr />
+            <br />
 
             {!waitingForCode && (
                 <form className="flex max-w-md flex-col gap-4">
@@ -161,7 +169,7 @@ export function SignUp() {
                         onChange={(e) => setPhone_number(e.target.value)}
                         placeholder="+91 987654321"
                     />
-                    <Button type="submit" onClick={signUp}>Sign Up</Button> 
+                    <Button type="submit" onClick={signUp}>Sign Up</Button>
                 </form>
             )}
             {waitingForCode && (

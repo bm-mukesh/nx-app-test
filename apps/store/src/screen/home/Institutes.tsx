@@ -26,8 +26,7 @@ export function Institutes() {
 
     //GET STATE FROM STORE
     const instState = useSelector((state: RootState) => state.institute.data);
-    console.log(instState);
-    //EDIT ROW POPUP
+     //EDIT ROW POPUP
     const [editRowPopUp, setEditRowPopUp] = useState(false);
     const [viewInstitute, setViewInstitute] = useState({});
 
@@ -45,6 +44,7 @@ export function Institutes() {
         setViewInstitute(row);
         navigate(`/institute/${row._id}`);
     };
+
     const columns: TableColumn<DataRow>[] = [
         {
             name: 'ID',
@@ -105,9 +105,11 @@ export function Institutes() {
             ),
         }
     ];
+    
     const rowSelectCritera = (row: any) => row.isActive;
     const [filterText, setFilterText] = useState('');
     const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
+    
     const subHeaderComponentMemo = useMemo(() => {
         const handleClear = () => {
             if (filterText) {
@@ -124,9 +126,11 @@ export function Institutes() {
             />
         );
     }, [filterText, resetPaginationToggle]);
-    console.log("filterText", filterText);
+    
+    console.log("Page==============Institute");
+    
     useEffect(() => {
-        getInstitute(0)
+       getInstitute(0)
     },[]);
     return (
         <div>

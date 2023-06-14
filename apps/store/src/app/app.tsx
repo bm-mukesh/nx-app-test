@@ -18,7 +18,7 @@ import SignUp from '../screen/home/SignUp';
  
 //AWS COGNITO
 import { Amplify } from 'aws-amplify';
-import awsExports from '../config/aws-exports';
+import {TEST, BM_POOL} from '../config/aws-exports';
 import InstituteDetails from '../screen/home/instituteDetails';
 import Institutes from '../screen/home/Institutes';
 import FlowbiteHeader from '../component/FlowbiteHeader';
@@ -65,9 +65,9 @@ export function App() {
   useEffect(() => {
     Amplify.configure({
       Auth: {
-        region: awsExports.REGION,
-        userPoolId: awsExports.USER_POOL_ID,
-        userPoolWebClientId: awsExports.USER_POOL_APP_CLIENT_ID,
+        region: BM_POOL.REGION,
+        userPoolId: BM_POOL.USER_POOL_ID,
+        userPoolWebClientId: BM_POOL.USER_POOL_APP_CLIENT_ID,
       },
     });
   }, []);

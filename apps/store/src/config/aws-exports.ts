@@ -1,9 +1,15 @@
 // replace the user pool region, id, and app client id details
-export default {
+export const TEST = {
     "REGION": 'ap-south-1',
     "USER_POOL_ID": 'ap-south-1_y8cMcZLSg' ,
     "USER_POOL_APP_CLIENT_ID": 'tmk9pbmnbk2u8g904bc4hg005',
 }
+export const BM_POOL = {
+    "REGION": 'ap-south-1',
+    "USER_POOL_ID": 'ap-south-1_c7QfuVIVm' ,
+    "USER_POOL_APP_CLIENT_ID": '10fadlarqhoqbtoi5ntt8itlrj',
+}
+
 // const x = {
 //     {
 //         "username": "dev.mukeshcgs@gmail.com",

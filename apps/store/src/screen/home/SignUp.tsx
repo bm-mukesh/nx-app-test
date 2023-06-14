@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import styled from 'styled-components';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Auth } from "aws-amplify";
 
@@ -14,7 +15,20 @@ import {
     TextInput,
     ToggleSwitch,
 } from 'flowbite-react';
-
+import { Link } from 'react-router-dom';
+const SignInHolder = styled.div`
+display:flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+.form{
+    width:400px;
+}
+}
+ `;
 export function SignUp() {
     const [email, setEmail] = useState("");
     const [phone_number, setPhone_number] = useState(" ");
@@ -25,7 +39,7 @@ export function SignUp() {
     const [forgotPassword, setForgotPassword] = useState(false);
     const [signUpSec, setSignUpSec] = useState(false);
     const [codeNewPass, setCodeNewPass] = useState(false);
- 
+
     // const signUp = (e:any) => {
     //     e.preventDefault();
     //     Auth.signUp({ username: email, password, attributes: { email } })
@@ -112,9 +126,10 @@ export function SignUp() {
     };
 
     return (
-        <div className="form">
-            <h3>Sign Up page</h3>
-                 {/* <form className="flex max-w-md flex-col gap-4">
+        <SignInHolder>
+            <div className="form">
+                <h3>Sign Up page</h3>
+                {/* <form className="flex max-w-md flex-col gap-4">
                     <input
                         id="sign-up-email"
                         type="email"
@@ -142,50 +157,86 @@ export function SignUp() {
                 </form>
    */}
 
-            <br />
-            <hr />
-            <br />
+                <br />
+                <hr />
+                <br />
 
-            {!waitingForCode && (
-                <form className="flex max-w-md flex-col gap-4">
-                    <input
-                        id="sign-up-email"
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="email"
-                    />
-                    <input
-                        id="sign-up-password"
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder="password"
-                    />
-                    <input
-                        id="sign-up-phone"
-                        type="phone"
-                        value={phone_number}
-                        onChange={(e) => setPhone_number(e.target.value)}
-                        placeholder="+91 987654321"
-                    />
-                    <Button type="submit" onClick={signUp}>Sign Up</Button>
-                </form>
-            )}
-            {waitingForCode && (
-                <form className="flex max-w-md flex-col gap-4">
-                    <input
-                        id="sign-up-code"
-                        type="text"
-                        value={code}
-                        onChange={(e) => setCode(e.target.value)}
-                        placeholder="code"
-                    />
-                    <Button type="submit" onClick={confirmSignUp}>Confirm Sign Up</Button>
-                    <Button type="button" onClick={resendCode}>Resend code</Button>
-                </form>
-            )}
-        </div>
+                {!waitingForCode && (
+                    <form className="flex max-w-md flex-col gap-4">
+                        <div>
+                            <div className="mb-2 block">
+                                <Label
+                                    htmlFor="email1"
+                                    value="Your email"
+                                />
+                            </div>
+                            <TextInput
+                                id="sign-up-email"
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="email"
+                            />
+                        </div>
+                        <div>
+                            <div className="mb-2 block">
+                                <Label
+                                    htmlFor="password"
+                                    value="Password"
+                                />
+                            </div>
+                            <TextInput
+                                id="sign-up-password"
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder="password"
+                            />
+                        </div>
+                        <div>
+                            <div className="mb-2 block">
+                                <Label
+                                    htmlFor="phone"
+                                    value="Phone"
+                                />
+                            </div>
+                            <TextInput
+                                id="sign-up-phone"
+                                type="phone"
+                                value={phone_number}
+                                onChange={(e) => setPhone_number(e.target.value)}
+                                placeholder="+91 987654321"
+                            />
+                        </div>
+                        <Button type="submit" onClick={signUp}>Sign Up</Button>
+                    </form>
+                )}
+                {waitingForCode && (
+                    <form className="flex max-w-md flex-col gap-4">
+                        <div>
+                            <div className="mb-2 block">
+                                <Label
+                                    htmlFor="phone"
+                                    value="phone"
+                                />
+                            </div>
+                            <TextInput
+                                id="sign-up-code"
+                                type="text"
+                                value={code}
+                                onChange={(e) => setCode(e.target.value)}
+                                placeholder="code"
+                            />
+                        </div>
+                        <Button type="submit" onClick={confirmSignUp}>Confirm Sign Up</Button>
+                        <Button type="button" onClick={resendCode}>Resend code</Button>
+                    </form>
+                )}
+                <p>Already have account <Link  to='/signIn'>SignIn</Link>
+</p>
+
+            </div>
+        </SignInHolder>
     )
 }
 export default SignUp

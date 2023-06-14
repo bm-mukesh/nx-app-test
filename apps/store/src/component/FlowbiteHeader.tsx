@@ -18,7 +18,7 @@ const FlowbiteHeader: React.FC<FbHeaderProps> = ({ onClick }) => {
         >
             <Navbar.Brand href="https://flowbite-react.com">
                 <img
-                    alt="Flowbite React Logo"
+                    alt="BM2.0"
                     className="mr-3 h-6 sm:h-9"
                     src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                 />
